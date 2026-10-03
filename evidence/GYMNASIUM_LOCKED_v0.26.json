@@ -1,0 +1,643 @@
+{
+  "boundary": "Standard Gymnasium Classic Control environments with a common tile-coded Q learner. This is external benchmark evidence for the replay controller, not a state-of-the-art RL claim or robot safety certification.",
+  "capacity": 500,
+  "controller_summary": {
+    "final_novelty_ema": 0.18147444467866525,
+    "final_risk_ema": 0.16806795806077116,
+    "final_surprise_ema": 0.6805015559034312,
+    "max_per_share": 0.36779714037367683,
+    "mean_per_share": 0.32706611523196216,
+    "min_per_share": 0.2938383633388239
+  },
+  "environments": [
+    "CartPole-v1",
+    "MountainCar-v0",
+    "Acrobot-v1"
+  ],
+  "gymnasium_version": "1.3.0",
+  "locked_controller": {
+    "ema_rate": 0.05,
+    "max_per": 0.4,
+    "min_per": 0.15
+  },
+  "replay_batch": 4,
+  "runs": [
+    {
+      "controller": null,
+      "env": "CartPole-v1",
+      "evaluation": {
+        "mean_length": 11.9,
+        "mean_return": 11.9,
+        "std_return": 0.9944289260117533,
+        "success_rate": 0.0
+      },
+      "method": "uniform",
+      "seed": 935101,
+      "train_tail_mean_return": 12.56,
+      "transitions": 759
+    },
+    {
+      "controller": null,
+      "env": "CartPole-v1",
+      "evaluation": {
+        "mean_length": 12,
+        "mean_return": 12.0,
+        "std_return": 0.816496580927726,
+        "success_rate": 0.0
+      },
+      "method": "per",
+      "seed": 935101,
+      "train_tail_mean_return": 12.62,
+      "transitions": 762
+    },
+    {
+      "controller": {
+        "final_novelty_ema": 0.20623882588594047,
+        "final_risk_ema": 0.5227252528181064,
+        "final_surprise_ema": 0.5866293085519144,
+        "max_per_share": 0.3464615448094305,
+        "mean_per_share": 0.30406632003302586,
+        "min_per_share": 0.2843201372969475
+      },
+      "env": "CartPole-v1",
+      "evaluation": {
+        "mean_length": 12.9,
+        "mean_return": 12.9,
+        "std_return": 1.5238839267549948,
+        "success_rate": 0.0
+      },
+      "method": "adaptive",
+      "seed": 935101,
+      "train_tail_mean_return": 14.18,
+      "transitions": 840
+    },
+    {
+      "controller": null,
+      "env": "CartPole-v1",
+      "evaluation": {
+        "mean_length": 330,
+        "mean_return": 330.0,
+        "std_return": 79.08083065938153,
+        "success_rate": 0.1
+      },
+      "method": "uniform",
+      "seed": 935102,
+      "train_tail_mean_return": 155.36,
+      "transitions": 8161
+    },
+    {
+      "controller": null,
+      "env": "CartPole-v1",
+      "evaluation": {
+        "mean_length": 41.5,
+        "mean_return": 41.5,
+        "std_return": 24.66779276708802,
+        "success_rate": 0.0
+      },
+      "method": "per",
+      "seed": 935102,
+      "train_tail_mean_return": 33.22,
+      "transitions": 1948
+    },
+    {
+      "controller": {
+        "final_novelty_ema": 0.16300220395594,
+        "final_risk_ema": 0.3866342337058776,
+        "final_surprise_ema": 0.6229966083703623,
+        "max_per_share": 0.3551217941771345,
+        "mean_per_share": 0.3165588986345508,
+        "min_per_share": 0.28457365791685324
+      },
+      "env": "CartPole-v1",
+      "evaluation": {
+        "mean_length": 209.9,
+        "mean_return": 209.9,
+        "std_return": 93.11575830354626,
+        "success_rate": 0.0
+      },
+      "method": "adaptive",
+      "seed": 935102,
+      "train_tail_mean_return": 114.62,
+      "transitions": 6016
+    },
+    {
+      "controller": null,
+      "env": "CartPole-v1",
+      "evaluation": {
+        "mean_length": 14.6,
+        "mean_return": 14.6,
+        "std_return": 6.149977416399366,
+        "success_rate": 0.0
+      },
+      "method": "uniform",
+      "seed": 935103,
+      "train_tail_mean_return": 17.02,
+      "transitions": 1026
+    },
+    {
+      "controller": null,
+      "env": "CartPole-v1",
+      "evaluation": {
+        "mean_length": 14.2,
+        "mean_return": 14.2,
+        "std_return": 9.461031186456955,
+        "success_rate": 0.0
+      },
+      "method": "per",
+      "seed": 935103,
+      "train_tail_mean_return": 20.46,
+      "transitions": 1205
+    },
+    {
+      "controller": {
+        "final_novelty_ema": 0.26736448746478003,
+        "final_risk_ema": 0.503248231982615,
+        "final_surprise_ema": 0.7081086009294653,
+        "max_per_share": 0.33850601413927706,
+        "mean_per_share": 0.30365223334856684,
+        "min_per_share": 0.27666390962771636
+      },
+      "env": "CartPole-v1",
+      "evaluation": {
+        "mean_length": 13.4,
+        "mean_return": 13.4,
+        "std_return": 6.3456021516217564,
+        "success_rate": 0.0
+      },
+      "method": "adaptive",
+      "seed": 935103,
+      "train_tail_mean_return": 21.4,
+      "transitions": 1252
+    },
+    {
+      "controller": null,
+      "env": "MountainCar-v0",
+      "evaluation": {
+        "mean_length": 177.4,
+        "mean_return": -177.4,
+        "std_return": 16.084499094193486,
+        "success_rate": 1.0
+      },
+      "method": "uniform",
+      "seed": 935101,
+      "train_tail_mean_return": -196.24,
+      "transitions": 23756
+    },
+    {
+      "controller": null,
+      "env": "MountainCar-v0",
+      "evaluation": {
+        "mean_length": 185.4,
+        "mean_return": -185.4,
+        "std_return": 20.095328368111385,
+        "success_rate": 0.5
+      },
+      "method": "per",
+      "seed": 935101,
+      "train_tail_mean_return": -188.56,
+      "transitions": 23334
+    },
+    {
+      "controller": {
+        "final_novelty_ema": 0.07109893828289283,
+        "final_risk_ema": 0.050001752694746916,
+        "final_surprise_ema": 0.6470705151576124,
+        "max_per_share": 0.36450049210173574,
+        "mean_per_share": 0.3315234429638954,
+        "min_per_share": 0.2755009533128704
+      },
+      "env": "MountainCar-v0",
+      "evaluation": {
+        "mean_length": 187,
+        "mean_return": -187.0,
+        "std_return": 14.922019523732928,
+        "success_rate": 0.5
+      },
+      "method": "adaptive",
+      "seed": 935101,
+      "train_tail_mean_return": -192.02,
+      "transitions": 23582
+    },
+    {
+      "controller": null,
+      "env": "MountainCar-v0",
+      "evaluation": {
+        "mean_length": 193.2,
+        "mean_return": -193.2,
+        "std_return": 2.859681411936962,
+        "success_rate": 1.0
+      },
+      "method": "uniform",
+      "seed": 935102,
+      "train_tail_mean_return": -189.16,
+      "transitions": 23458
+    },
+    {
+      "controller": null,
+      "env": "MountainCar-v0",
+      "evaluation": {
+        "mean_length": 168.9,
+        "mean_return": -168.9,
+        "std_return": 25.039746182597156,
+        "success_rate": 1.0
+      },
+      "method": "per",
+      "seed": 935102,
+      "train_tail_mean_return": -183.68,
+      "transitions": 23184
+    },
+    {
+      "controller": {
+        "final_novelty_ema": 0.06487067974559449,
+        "final_risk_ema": 0.050000000000311864,
+        "final_surprise_ema": 0.5557573949366631,
+        "max_per_share": 0.3736313079773411,
+        "mean_per_share": 0.3314240385193257,
+        "min_per_share": 0.2525093424826436
+      },
+      "env": "MountainCar-v0",
+      "evaluation": {
+        "mean_length": 181.9,
+        "mean_return": -181.9,
+        "std_return": 23.932544090979267,
+        "success_rate": 0.5
+      },
+      "method": "adaptive",
+      "seed": 935102,
+      "train_tail_mean_return": -189.64,
+      "transitions": 23482
+    },
+    {
+      "controller": null,
+      "env": "MountainCar-v0",
+      "evaluation": {
+        "mean_length": 191.7,
+        "mean_return": -191.7,
+        "std_return": 2.0027758514399734,
+        "success_rate": 1.0
+      },
+      "method": "uniform",
+      "seed": 935103,
+      "train_tail_mean_return": -188.82,
+      "transitions": 23395
+    },
+    {
+      "controller": null,
+      "env": "MountainCar-v0",
+      "evaluation": {
+        "mean_length": 200,
+        "mean_return": -200.0,
+        "std_return": 0.0,
+        "success_rate": 0.0
+      },
+      "method": "per",
+      "seed": 935103,
+      "train_tail_mean_return": -188.22,
+      "transitions": 23411
+    },
+    {
+      "controller": {
+        "final_novelty_ema": 0.14811861243551747,
+        "final_risk_ema": 1.844941838854951e-06,
+        "final_surprise_ema": 0.6636920291356395,
+        "max_per_share": 0.3652292219784473,
+        "mean_per_share": 0.33153240511271415,
+        "min_per_share": 0.2838320912575515
+      },
+      "env": "MountainCar-v0",
+      "evaluation": {
+        "mean_length": 198.5,
+        "mean_return": -198.5,
+        "std_return": 2.0138409955990952,
+        "success_rate": 0.4
+      },
+      "method": "adaptive",
+      "seed": 935103,
+      "train_tail_mean_return": -184.54,
+      "transitions": 23227
+    },
+    {
+      "controller": null,
+      "env": "Acrobot-v1",
+      "evaluation": {
+        "mean_length": 310.5,
+        "mean_return": -309.6,
+        "std_return": 106.83965139923994,
+        "success_rate": 0.9
+      },
+      "method": "uniform",
+      "seed": 935101,
+      "train_tail_mean_return": -356.18,
+      "transitions": 49545
+    },
+    {
+      "controller": null,
+      "env": "Acrobot-v1",
+      "evaluation": {
+        "mean_length": 355.3,
+        "mean_return": -354.4,
+        "std_return": 114.0274820675554,
+        "success_rate": 0.9
+      },
+      "method": "per",
+      "seed": 935101,
+      "train_tail_mean_return": -317.3,
+      "transitions": 46456
+    },
+    {
+      "controller": {
+        "final_novelty_ema": 0.24613557103168257,
+        "final_risk_ema": 3.0640344359966596e-07,
+        "final_surprise_ema": 0.7970116245091582,
+        "max_per_share": 0.3880225761642647,
+        "mean_per_share": 0.3415050513299672,
+        "min_per_share": 0.3288945886882513
+      },
+      "env": "Acrobot-v1",
+      "evaluation": {
+        "mean_length": 368.6,
+        "mean_return": -367.8,
+        "std_return": 93.24376654768939,
+        "success_rate": 0.8
+      },
+      "method": "adaptive",
+      "seed": 935101,
+      "train_tail_mean_return": -357.26,
+      "transitions": 48436
+    },
+    {
+      "controller": null,
+      "env": "Acrobot-v1",
+      "evaluation": {
+        "mean_length": 263.5,
+        "mean_return": -262.5,
+        "std_return": 72.33602145542703,
+        "success_rate": 1.0
+      },
+      "method": "uniform",
+      "seed": 935102,
+      "train_tail_mean_return": -288.3,
+      "transitions": 44141
+    },
+    {
+      "controller": null,
+      "env": "Acrobot-v1",
+      "evaluation": {
+        "mean_length": 266.3,
+        "mean_return": -265.3,
+        "std_return": 81.87124037169585,
+        "success_rate": 1.0
+      },
+      "method": "per",
+      "seed": 935102,
+      "train_tail_mean_return": -333.3,
+      "transitions": 48240
+    },
+    {
+      "controller": {
+        "final_novelty_ema": 0.20648923026700905,
+        "final_risk_ema": 1.792091190599241e-66,
+        "final_surprise_ema": 0.7184928400754741,
+        "max_per_share": 0.3905167765230319,
+        "mean_per_share": 0.34154762274677364,
+        "min_per_share": 0.3290839970257662
+      },
+      "env": "Acrobot-v1",
+      "evaluation": {
+        "mean_length": 297.8,
+        "mean_return": -296.8,
+        "std_return": 70.27533153406124,
+        "success_rate": 1.0
+      },
+      "method": "adaptive",
+      "seed": 935102,
+      "train_tail_mean_return": -339.9,
+      "transitions": 47110
+    },
+    {
+      "controller": null,
+      "env": "Acrobot-v1",
+      "evaluation": {
+        "mean_length": 344.2,
+        "mean_return": -343.3,
+        "std_return": 93.29886268212371,
+        "success_rate": 0.9
+      },
+      "method": "uniform",
+      "seed": 935103,
+      "train_tail_mean_return": -313.1,
+      "transitions": 46777
+    },
+    {
+      "controller": null,
+      "env": "Acrobot-v1",
+      "evaluation": {
+        "mean_length": 319.3,
+        "mean_return": -318.3,
+        "std_return": 94.97022925340575,
+        "success_rate": 1.0
+      },
+      "method": "per",
+      "seed": 935103,
+      "train_tail_mean_return": -346.98,
+      "transitions": 47494
+    },
+    {
+      "controller": {
+        "final_novelty_ema": 0.25995145303863043,
+        "final_risk_ema": 1.319644084267087e-20,
+        "final_surprise_ema": 0.8247550814645915,
+        "max_per_share": 0.3881845354924286,
+        "mean_per_share": 0.3417850243988396,
+        "min_per_share": 0.329166592440815
+      },
+      "env": "Acrobot-v1",
+      "evaluation": {
+        "mean_length": 276.9,
+        "mean_return": -275.9,
+        "std_return": 67.6747942573731,
+        "success_rate": 1.0
+      },
+      "method": "adaptive",
+      "seed": 935103,
+      "train_tail_mean_return": -332.46,
+      "transitions": 47169
+    }
+  ],
+  "seeds": [
+    935101,
+    935102,
+    935103
+  ],
+  "summary": {
+    "Acrobot-v1": {
+      "adaptive": {
+        "eval_length": {
+          "mean": 314.43333333333334,
+          "std": 48.05958107738076
+        },
+        "eval_return": {
+          "mean": -313.5,
+          "std": 48.172294942217576
+        },
+        "success_rate": {
+          "mean": 0.9333333333333333,
+          "std": 0.11547005383792512
+        },
+        "train_tail_return": {
+          "mean": -343.20666666666665,
+          "std": 12.726371569828279
+        }
+      },
+      "per": {
+        "eval_length": {
+          "mean": 313.6333333333333,
+          "std": 44.76978147515725
+        },
+        "eval_return": {
+          "mean": -312.6666666666667,
+          "std": 44.81632886943476
+        },
+        "success_rate": {
+          "mean": 0.9666666666666667,
+          "std": 0.05773502691896256
+        },
+        "train_tail_return": {
+          "mean": -332.5266666666667,
+          "std": 14.855104622093155
+        }
+      },
+      "uniform": {
+        "eval_length": {
+          "mean": 306.06666666666666,
+          "std": 40.532250533782765
+        },
+        "eval_return": {
+          "mean": -305.1333333333333,
+          "std": 40.584767257350805
+        },
+        "success_rate": {
+          "mean": 0.9333333333333333,
+          "std": 0.05773502691896256
+        },
+        "train_tail_return": {
+          "mean": -319.1933333333333,
+          "std": 34.34778207298592
+        }
+      }
+    },
+    "CartPole-v1": {
+      "adaptive": {
+        "eval_length": {
+          "mean": 78.73333333333333,
+          "std": 113.59394056609416
+        },
+        "eval_return": {
+          "mean": 78.73333333333333,
+          "std": 113.59394056609416
+        },
+        "success_rate": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "train_tail_return": {
+          "mean": 50.06666666666667,
+          "std": 56.021261440040185
+        }
+      },
+      "per": {
+        "eval_length": {
+          "mean": 22.566666666666666,
+          "std": 16.43360378411666
+        },
+        "eval_return": {
+          "mean": 22.566666666666666,
+          "std": 16.43360378411666
+        },
+        "success_rate": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "train_tail_return": {
+          "mean": 22.1,
+          "std": 10.397461228588448
+        }
+      },
+      "uniform": {
+        "eval_length": {
+          "mean": 118.83333333333333,
+          "std": 182.8806805907429
+        },
+        "eval_return": {
+          "mean": 118.83333333333333,
+          "std": 182.8806805907429
+        },
+        "success_rate": {
+          "mean": 0.03333333333333333,
+          "std": 0.05773502691896258
+        },
+        "train_tail_return": {
+          "mean": 61.64666666666667,
+          "std": 81.18875866358184
+        }
+      }
+    },
+    "MountainCar-v0": {
+      "adaptive": {
+        "eval_length": {
+          "mean": 189.13333333333333,
+          "std": 8.503136676152707
+        },
+        "eval_return": {
+          "mean": -189.13333333333333,
+          "std": 8.503136676152707
+        },
+        "success_rate": {
+          "mean": 0.4666666666666667,
+          "std": 0.05773502691896256
+        },
+        "train_tail_return": {
+          "mean": -188.73333333333332,
+          "std": 3.82153546801981
+        }
+      },
+      "per": {
+        "eval_length": {
+          "mean": 184.76666666666668,
+          "std": 15.559670090761347
+        },
+        "eval_return": {
+          "mean": -184.76666666666668,
+          "std": 15.559670090761347
+        },
+        "success_rate": {
+          "mean": 0.5,
+          "std": 0.5
+        },
+        "train_tail_return": {
+          "mean": -186.82,
+          "std": 2.7246284150320355
+        }
+      },
+      "uniform": {
+        "eval_length": {
+          "mean": 187.43333333333334,
+          "std": 8.721429546429482
+        },
+        "eval_return": {
+          "mean": -187.43333333333334,
+          "std": 8.721429546429482
+        },
+        "success_rate": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "train_tail_return": {
+          "mean": -191.40666666666667,
+          "std": 4.189240185682054
+        }
+      }
+    }
+  },
+  "version": "0.26"
+}
