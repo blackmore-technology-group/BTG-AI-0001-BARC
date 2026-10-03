@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "btg-barc"
+version = "1.0.0"
+description = "Blackmore Adaptive Replay Controller for reinforcement and continual learning"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [
+  {name = "Blackmore Technology Group Limited"}
+]
+keywords = ["reinforcement-learning", "experience-replay", "continual-learning", "robotics", "PER"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+
+[project.urls]
+Homepage = "https://github.com/blackmore-technology-group/BTG-AI-0001-BARC"
+Repository = "https://github.com/blackmore-technology-group/BTG-AI-0001-BARC"
+Issues = "https://github.com/blackmore-technology-group/BTG-AI-0001-BARC/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
