@@ -1,0 +1,60 @@
+{
+  "algorithm_id": "BTG-AI-0001",
+  "algorithm_name": "Blackmore Adaptive Replay Controller",
+  "canonical_lineage_after": {
+    "canonical_state": "ff7e1199422207da0fff9ad50c70c8e788b04439beddfc68906b89f9c19e8f53",
+    "origin_bundle": "26d86a01e855f4433fc23bf693b1d043209750f3d432a79bf61ad5bc3602dad5",
+    "protocol_freeze": "8099811548f3a8c25da192ad732cfc767020e0491c805c2c79764e351296ddff"
+  },
+  "canonical_lineage_before": {
+    "canonical_state": "ff7e1199422207da0fff9ad50c70c8e788b04439beddfc68906b89f9c19e8f53",
+    "origin_bundle": "26d86a01e855f4433fc23bf693b1d043209750f3d432a79bf61ad5bc3602dad5",
+    "protocol_freeze": "8099811548f3a8c25da192ad732cfc767020e0491c805c2c79764e351296ddff"
+  },
+  "canonical_lineage_unchanged": true,
+  "content_hashes": {
+    "external_evidence_sha256": "67438e568b0a439fc1ceb7b378776af159d6a28b0486aca75333ab5ae4bec914",
+    "external_harness_sha256": "5cffd732a0f285b0922fa5e33dfa38746f1e4c9b779fe758ec16acde6bd7b953",
+    "internal_holdout_sha256": "6a13a67d9eb257b33064de9aaef50a1816db162a50879abaabefb5e0328138e8",
+    "source_sha256": "4cd048d0108ed5b8121f7a2fa3047388d025688c53e525f8e85782afa1c76d6e",
+    "test_sha256": "bf0ff47a088ab800cdfd95617b4db8399a599f503f61f9260a735acc18fb89a9"
+  },
+  "controller_entity_id": "ent2-kkov66eoh23h3zgr4pe4njsbkayn2kxad6vfyirqvuqrty52clpa",
+  "economic_boundary": {
+    "amount_units": 0,
+    "currency": "CAD",
+    "eep_instrument_issued": false,
+    "listing_created": false,
+    "market_value_asserted": false,
+    "reason": "No fabricated quantity, price, counterparty, payment, or market value. Open-source code access remains Apache-2.0.",
+    "trade_created": false,
+    "value_state": "POTENTIAL"
+  },
+  "entity_database": "E:\\ENTITY_ACTIVE\\ENTITY_V3_4_PRODUCTION_RUNTIME\\state\\entity_v3\\universal_fabric.sqlite",
+  "entity_display_version": "3.4.3",
+  "entity_system_id": "ent2-m3nofxtv3zwldhwuonw3h67hqjh2zambrhj4kaaulncpt4amkcua",
+  "ingested_utc_ms": 1791003502937,
+  "potential_value_id": "value3-96319d52ca531f73c76e0bae4d20e16dc789b0c5",
+  "provenance_edge_id": "prov3-0577172d1dcd5b0e25b29ec2d3b414415ca34c92",
+  "public_apache_right_id": "right3-80f5e5378a023f7f552e34d02aa3edca0be4778a",
+  "qualification_attestation_id": "att3-89ce4682609936816a16e5ff6a6df00450f953d0",
+  "release": "1.0.0",
+  "release_commit": "ab71fbc91ef5249cb207c5c5742a88fe048f3a7a",
+  "release_url": "https://github.com/blackmore-technology-group/BTG-AI-0001-BARC/releases/tag/v1.0.0",
+  "research_object_id": "obj3-c3872cfd33384139907aca0d0fbeede68b5c7fce",
+  "resolution_version": 1,
+  "schema": "entity-v343-btg-algorithm-ingestion-receipt-v1",
+  "software_dco_object_id": "obj3-f6e2c561c315ea6e7fd4843e75da34362ce213e9",
+  "treasury_entity_id": "ent2-ze26mtailzxyxhfgdnhl7iv3qcadlmp5huzdtwzjmhn4qajzmtca",
+  "verification": {
+    "attestation_signature": true,
+    "provenance_signature": true,
+    "public_execute_right_active": true,
+    "research_signature": true,
+    "resolution_signature": true,
+    "right_signature": true,
+    "software_roundtrip": true,
+    "software_signature": true,
+    "value_signature": true
+  }
+}
