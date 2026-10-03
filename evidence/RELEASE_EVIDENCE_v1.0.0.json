@@ -1,0 +1,107 @@
+{
+  "schema": "btg-algorithm-release-evidence-v1",
+  "algorithm_id": "BTG-AI-0001",
+  "name": "Blackmore Adaptive Replay Controller",
+  "acronym": "BARC",
+  "release": "1.0.0",
+  "release_status": "OPEN_SOURCE_RESEARCH_GRADE",
+  "developer": "Blackmore Technology Group Limited",
+  "jurisdiction": "CA-BC",
+  "license": "Apache-2.0",
+  "qualified_source_head_before_release_manifest": "437f9e8ad36d50e83e8f90d60a80bd6666456bce",
+  "source_repo": "https://github.com/blackmore-technology-group/BTG-AI-0001-BARC",
+  "hashes": {
+    "src/btg_barc/replay.py": "4CD048D0108ED5B8121F7A2FA3047388D025688C53E525F8E85782AFA1C76D6E",
+    "tests/test_barc.py": "BF0FF47A088AB800CDFD95617B4DB8399A599F503F61F9260A735ACC18FB89A9",
+    "benchmarks/gymnasium_qualification_v026.py": "5CFFD732A0F285B0922FA5E33DFA38746F1E4C9B779FE758EC16ACDE6BD7B953",
+    "evidence/GYMNASIUM_LOCKED_v0.26.json": "67438E568B0A439FC1CEB7B378776AF159D6A28B0486ACA75333AB5AE4BEC914",
+    "internal_v0.22_locked_holdout_evidence": "6A13A67D9EB257B33064DE9AAEF50A1816DB162A50879ABAABEFB5E0328138E8"
+  },
+  "unit_gate": {
+    "tests": 13,
+    "passed": 13,
+    "failed": 0,
+    "exact_public_snapshot": true
+  },
+  "controller_contract": {
+    "priority_alpha": 0.6,
+    "importance_beta": 0.4,
+    "ema_rate": 0.05,
+    "min_priority_share": 0.15,
+    "max_priority_share": 0.4,
+    "equation": "P_BARC(i)=lambda*P_PER(i)+(1-lambda)/N",
+    "share_rule": "lambda=clamp(0.15+0.25*(0.70*min(1,S/0.35)+0.30*N)-0.10*R,0.15,0.40)"
+  },
+  "external_qualification": {
+    "framework": "Gymnasium 1.3.0 Classic Control",
+    "environments": [
+      "CartPole-v1",
+      "MountainCar-v0",
+      "Acrobot-v1"
+    ],
+    "seeds": [
+      935101,
+      935102,
+      935103
+    ],
+    "claim": "reproducible external operation; no universal superiority claim",
+    "controller_mean_priority_share": 0.32706611523196216,
+    "controller_min_priority_share": 0.2938383633388239,
+    "controller_max_priority_share": 0.36779714037367683,
+    "results": {
+      "CartPole-v1": {
+        "uniform": {
+          "eval_return": 118.833,
+          "success": 0.033
+        },
+        "per": {
+          "eval_return": 22.567,
+          "success": 0
+        },
+        "barc": {
+          "eval_return": 78.733,
+          "success": 0
+        }
+      },
+      "MountainCar-v0": {
+        "uniform": {
+          "eval_return": -187.433,
+          "success": 1
+        },
+        "per": {
+          "eval_return": -184.767,
+          "success": 0.5
+        },
+        "barc": {
+          "eval_return": -189.133,
+          "success": 0.467
+        }
+      },
+      "Acrobot-v1": {
+        "uniform": {
+          "eval_return": -305.133,
+          "success": 0.933
+        },
+        "per": {
+          "eval_return": -312.667,
+          "success": 0.967
+        },
+        "barc": {
+          "eval_return": -313.5,
+          "success": 0.933
+        }
+      }
+    }
+  },
+  "claim_boundary": [
+    "No universal superiority over PER or uniform replay.",
+    "No state-of-the-art RL claim.",
+    "No physical-robot performance claim.",
+    "No safety certification.",
+    "No patentability determination.",
+    "No market-value or commercial-value assertion.",
+    "Open-source registration does not create ownership of prior art."
+  ],
+  "entity_ingestion_authorized": true,
+  "entity_ingestion_note": "User authorization was received after ENTITY v3.4.3 rebuild/push. ENTITY registration must preserve Apache-2.0 permissions and separate provenance from legal/economic ownership."
+}
