@@ -1,0 +1,12 @@
+Blackmore Adaptive Replay Controller (BARC)
+BTG Algorithm ID: BTG-AI-0001
+
+Copyright 2026 Blackmore Technology Group Limited.
+
+This product includes software developed by Blackmore Technology Group Limited.
+
+BARC is distributed under the Apache License, Version 2.0.
+
+The project builds on published concepts in reinforcement learning including
+experience replay and prioritized experience replay. Those underlying concepts
+are prior art and are not claimed as exclusive BTG property. See docs/PRIOR_ART.md.
